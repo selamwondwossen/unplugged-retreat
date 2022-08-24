@@ -621,6 +621,10 @@ textarea {
     align-items:flex-start;
   }
 
+  .map figure {
+    padding-bottom: 45.5%;
+  }
+
   /* ==========================================================================
      FAQ Page
      ========================================================================== */
@@ -635,7 +639,7 @@ textarea {
       .faq h2 {
           width: 100%;
       }  
-}
+  }
 
 
 @media only screen and (min-width: 1200px) {
@@ -678,17 +682,29 @@ aside .content-wrapper .form {
    .mission h2,
    .contact-section .content-wrapper h2 {
        width: 95%;
-   }
+       font-size: 3em;
+      }
+      
+  .contact-content h4 {
+      font-size: 1.875em;
+    }
+
+   .map figure {
+    padding-bottom: 37.5%;
+  }
 
 /* ==========================================================================
   FAQ Page
   ========================================================================== */
    .faq h2 {
-       width: 100%;
-   }
-     
-}
+      width: 100%;
+    }
 
+  .faq h4, .faq p {
+        font-size: 1.125em;
+        line-height: 1;
+    }
+  }
 
 /* ==========================================================================
    Print styles.
