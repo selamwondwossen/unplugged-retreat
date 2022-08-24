@@ -294,6 +294,11 @@ textarea {
 
   /* Features */
 
+  .features i {
+	  font-size: 3.75em;
+    margin-bottom: 40px;
+  }
+
   .features{
     background: url('../img/features-hero.jpg') center no-repeat #333;
     background-size: cover;
