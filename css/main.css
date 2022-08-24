@@ -180,6 +180,14 @@ textarea {
     margin: 0;
   }
 
+  header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
   .header-divider{
     background: #3a3a3a; 
     width: 100%;
@@ -190,6 +198,7 @@ textarea {
   header nav{
     display: flex;
     font-weight: 700;
+    font-size: 1.125em;
     text-transform: uppercase;
     justify-content: space-around;
     align-items: center;
@@ -201,6 +210,10 @@ textarea {
     display: flex;
     justify-content: space-around;
     width: 100%;
+  }
+
+  header nav ul li {
+    font-size: 1.125em;
   }
 
   footer{
@@ -228,22 +241,32 @@ textarea {
    }
 
   footer .social-icons p{
+    background-color: #527158;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
-    align-items:center;   
+    align-items: center; 
    }
+
+   footer .social-icons p i {
+    font-size: 1.3125em;
+  }
 
    footer .copyright{
      margin: 20px 0;
    }
 
-  /* ---- Mobile Styles - HOMEPAGE -------- */
+  /* ----------------------------- Mobile Styles - HOMEPAGE ---------------------------- */
 
   /* Hero Area */
 
   .hero-area{
     background: url('../img/homepage-hero.jpg') center no-repeat #333;
     background-size: cover;
+    background-position: center;
+    min-height: 500px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -302,6 +325,7 @@ textarea {
   .features{
     background: url('../img/features-hero.jpg') center no-repeat #333;
     background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -309,6 +333,7 @@ textarea {
 
   .features p{
     margin: 0;
+    text-align: center;
   }
 
   .features h2 {
@@ -339,6 +364,7 @@ textarea {
 
   .reviews h2 {
     margin-bottom: 40px;
+    line-height: 1;
   }
   
   .reviews h3 {
@@ -360,6 +386,7 @@ textarea {
   }
 
   .contact-section{
+    background-color: #2a423a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -370,7 +397,7 @@ textarea {
     margin: 0;
   }
 
-  .map{
+  .map figure{
     width: 100%;
     height: 0; 
     padding-bottom: 125%; 
@@ -390,7 +417,8 @@ textarea {
    FAQ Page
    ========================================================================== */
 
-  .faq{
+  .faq {
+    background-color: #527158;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -411,7 +439,6 @@ textarea {
   }
   
   .faq-content {
-    flex-basis: 640px;
     margin-bottom: 50px;
   }
 
@@ -516,6 +543,16 @@ textarea {
     margin: 100px 0;
   }
 
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3 {
+      font-size: 1.5em;
+      line-height: 1.25;
+  }
+
   /* Header */
 
   header {
@@ -529,6 +566,10 @@ textarea {
     width:100%;
   }
 
+  header figure{
+    width: 30%;
+  }
+  
   header nav {
     width: 20%;
   }
@@ -542,6 +583,16 @@ textarea {
   }
 
   /* Hero Area */
+
+  .hero-area {
+    min-height: 600px;
+  }  
+
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+  }
 
   /* Aside */
   aside .content-wrapper {
@@ -559,6 +610,10 @@ textarea {
 
   /* Features */
 
+  .features h2{
+    margin-bottom: 20px;
+  }
+
   .features article {
     display: flex;
     justify-content: center;
@@ -569,7 +624,11 @@ textarea {
   }
 
   .features .features-item-description {
-    width: 50%;
+    width: 62%;
+  }
+
+  .features i {
+    margin-bottom: 30px;
   }
 
   /* Reviews */
@@ -578,8 +637,18 @@ textarea {
     justify-content: space-between;
   }
 
-  .reviews article div {
+  .reviews h2{
+    width: 85%;
+  }
+
+  .reviews article div, 
+  .reviews article figure {
     width: 49%;      
+  }
+  
+  .reviews h3{
+    width: 75%;
+    margin: 0;
   }
 
   /* Footer */
@@ -588,7 +657,7 @@ textarea {
     margin: 100px 0;
   }
 
-  .footer-content {
+  footer .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -596,6 +665,20 @@ textarea {
 
   footer .contact {
     margin-bottom: 0;
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  footer p {
+      line-height: 1.285;
+  }
+
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
   }
 
   footer .copyright {
@@ -630,6 +713,10 @@ textarea {
     padding-bottom: 45.5%;
   }
 
+  .contact-content h4{
+    font-size: 1.5em;
+  }
+
   /* ==========================================================================
      FAQ Page
      ========================================================================== */
@@ -644,18 +731,44 @@ textarea {
       .faq h2 {
           width: 100%;
       }  
+
+      .faq h4,
+  .faq p {
+      font-size: .875em;
+      line-height: 1.125;
+    }
   }
 
 
 @media only screen and (min-width: 1200px) {
   /* Desktop styles here */
+
+  header{
+    padding: 15px 0;
+  }
+
   .content-wrapper {
     max-width: 960px;
   }
 
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+      font-size: 1.875em;
+  }
+
+  p {
+      font-size: 1.125em;
+      line-height: 1.333;
+  }
+
   /* Hero */    
   .hero-area h1 {
-    width: 60%; 
+    font-size: 3.75em;
+    width: 80%; 
   }
 
   /* Aside */
@@ -668,6 +781,10 @@ aside .content-wrapper .form {
    width: 30%
 }
 
+.form-description p{
+  font-size: 1.125em;
+}
+
 /* Features */
 .features h2 {
    width: 90%;
@@ -678,9 +795,19 @@ aside .content-wrapper .form {
 }
 
 /* Reviews */ 
+
+.reviews h2 {
+  padding-bottom: 50px; 
+}
+
 .reviews article div {
    width:42%;
 }
+
+footer h4 {
+  font-size: 1.875em;
+}
+
 /* ==========================================================================
    About Page
    ========================================================================== */
@@ -703,6 +830,7 @@ aside .content-wrapper .form {
   ========================================================================== */
    .faq h2 {
       width: 100%;
+      font-size: 3em;
     }
 
   .faq h4, .faq p {
